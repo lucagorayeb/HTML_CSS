@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <title>Document</title>
+
+    <style>
+        .row [class^=col], .row .col{
+            background-color:#ddd;
+            border:1px solid black
+        }
+
+        .row{
+            background-color:#06024b; 
+            padding:10px; 
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Pode-se definir tamanho minimo no css para o tamanho das colunas 
+        com o col-tamanho_da_tela-número_do_tamanho
+
+        Se for passado só o tamanho da col-número_do_tamanho, vai ser o tamanho 
+        que a coluna vai ter.
+
+        Para ordenar as colunas existem duas formas:
+            A primeira forma é por palavra:
+                order-first 
+                order-last
+            
+            A segunda forma é por número:
+                A ordem por número só ordena quando todas tem número
+                se não as desordenadas vem na frente.
+                order-1
+                order-2
+        
+        Para fazer o alinhamento tem duas maneiras:
+            Horizontal:
+                Informa a linha a ordenação correta.
+                    justify-content-start
+                    justify-content-center
+                    justify-content-end
+                    justify-content-around
+                    justify-content-between
+            
+            Vertical:
+                Informa a linha que vai alinhar os itens.
+                    align-items-start
+                    align-items-center
+                    align-items-end
+            
+    -->
+    <div class="container">
+        <div class="row justify-content-center" >
+            <div class="col" >PRIMEIRA</div>
+            <div class="col " >SEGUNDA</div>
+            <div class="col order-1" >TERCEIRA</div>
+            <!-- <div class="w-100"></div>
+            <div class="col-lg" style='background-color:#079bcd'>...</div>
+            <div class="col-sm" style='background-color:#123456'>...</div>
+            <div class="col-sm" style='background-color:#013289'>...</div> -->
+        </div>
+        <div class="row">
+            <div class="col order-2" >QUARTA</div>
+            <div class="col order-3" >QUINTA</div>
+            <div class="col order-1" >SEXTA</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/jquery-4.0.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
